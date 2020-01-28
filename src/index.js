@@ -2,17 +2,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
-import CommentDetail from './CommentDetail';
+import CommentDetail from './CommentDetail'; // ./ says look in the same folder
 
 // Create a react component
 const App = () => {
 	return (
 		<div className="ui container comments">
-			<CommentDetail />
-			<CommentDetail />
-			<CommentDetail />
-			<CommentDetail />
-			<CommentDetail />
+			<CommentDetail author="Sam" />
+			<CommentDetail author="Alex" />
+			<CommentDetail author="Jane"/>
+			<CommentDetail author="Mallory"/>
+			<CommentDetail author="Paul"/>
 		</div>
 	);
 };
